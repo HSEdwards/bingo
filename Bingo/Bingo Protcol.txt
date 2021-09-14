@@ -1,0 +1,18 @@
+Application Protocol:
+
+client -> server
+	Message - sender, body
+	Disconnect /quit request
+	Akk for card /card
+	Call bingo /bingo
+	ASk for new number /next
+	Fill a square /fill row column
+	Start game /START
+	
+server -> client
+	Message - sender, body
+	
+	Server will have to track current clients, handle disconnect requests
+	All clients receive messages in the same order
+	The server will also host the game. It will have to recieve all commands from the user
+	and process them accordingly
